@@ -1,6 +1,7 @@
 ---
 layout: default
-title: About Me
+title: "Cloud Computing in Genomic Data Analysis"
+date: 2026-05-05
 ---
 
 <style>
@@ -13,43 +14,45 @@ title: About Me
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .about-box {
-    max-width: 900px;
+  .post-box {
+    max-width: 950px;
     margin: 80px auto;
     padding: 55px 45px;
-    background: rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.94);
     border-radius: 30px;
     box-shadow: 0 18px 45px rgba(11,94,215,0.18);
-    text-align: center;
     animation: fadeUp 1s ease;
   }
 
-  .about-box h1 {
+  .post-box h1 {
     color: #0b5ed7;
-    font-size: 48px;
+    font-size: 46px;
+    line-height: 1.2;
   }
 
-  .about-box p {
-    font-size: 19px;
+  .post-box h2 {
+    color: #1769aa;
+    margin-top: 34px;
+    font-size: 30px;
+  }
+
+  .post-box p,
+  .post-box li {
+    font-size: 18px;
     color: #4f5f70;
     line-height: 1.8;
   }
 
-  .about-list {
-    text-align: left;
-    max-width: 600px;
-    margin: 30px auto;
-    font-size: 18px;
-    color: #1769aa;
-  }
-
-  .about-list li {
-    margin: 12px 0;
+  .reference {
+    background: #eef6ff;
+    border-left: 6px solid #0b5ed7;
+    padding: 18px;
+    border-radius: 12px;
   }
 
   .button {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 35px;
     padding: 13px 24px;
     background: #0b5ed7;
     color: white !important;
@@ -64,25 +67,56 @@ title: About Me
   }
 </style>
 
-<div class="about-box">
+<div class="post-box">
 
-# About Me
+# Cloud Computing in Genomic Data Analysis
 
-Hello, my name is **Kamela**.
+## Introduction
 
-I am interested in **health data science, cloud computing, and biomedical innovation**. This website presents my learning journey as I explore how modern cloud technologies can support biomedical research, healthcare applications, and large-scale data analysis.
+The rapid growth of genomic data has created major challenges for biomedical research. Modern sequencing technologies generate very large datasets that require advanced computational infrastructure for storage, processing, and analysis. Traditional local computing systems are often not flexible enough to handle this scale efficiently.
 
-My main interests include:
+Cloud computing has become a valuable solution because it provides scalable, on-demand computing and storage resources for data-intensive biomedical research.
 
-<ul class="about-list">
-  <li>Health data science</li>
-  <li>Cloud computing in biomedicine</li>
-  <li>Bioinformatics</li>
-  <li>Genomic data analysis</li>
-  <li>Artificial intelligence in healthcare</li>
+## Selected Scientific Article
+
+This blog is based on the following real scientific article:
+
+<div class="reference">
+Schatz, M. C., Langmead, B., & Salzberg, S. L. (2010). <em>Cloud computing and the DNA data race.</em> Nature Biotechnology, 28(7), 691–693. https://doi.org/10.1038/nbt0710-691
+</div>
+
+## Cloud Application in Biomedicine
+
+The article discusses how cloud computing can support genomic data analysis. Genomics involves computationally demanding tasks such as DNA sequencing analysis, sequence alignment, and variant detection. These tasks require significant storage capacity and processing power.
+
+Cloud platforms allow researchers to store large genomic datasets, run analysis pipelines on demand, and share data across institutions. This reduces the need for expensive local infrastructure and makes large-scale biomedical analysis more accessible.
+
+## Key Advantages
+
+Cloud computing provides several important advantages for genomic research:
+
+<ul>
+  <li><strong>Scalability:</strong> Researchers can increase or decrease computing resources depending on dataset size and project needs.</li>
+  <li><strong>Cost efficiency:</strong> Laboratories can avoid purchasing expensive local servers and instead pay for resources when they are needed.</li>
+  <li><strong>Speed:</strong> Cloud platforms support parallel processing, which can reduce the time required for large genomic analyses.</li>
+  <li><strong>Collaboration:</strong> Researchers in different locations can access shared datasets and workflows more easily.</li>
 </ul>
 
-Through this website, I aim to better understand how cloud-based platforms can help researchers store, process, and analyze complex biomedical datasets more efficiently.
+## Challenges
+
+Although cloud computing is powerful, the article also highlights important challenges. Genomic data is highly sensitive because it can reveal personal biological information. This means privacy, security, and ethical data management are essential.
+
+Other challenges include data transfer limitations, cost control, and the need for careful cloud configuration to protect biomedical data.
+
+## Conclusion
+
+Cloud computing plays an important role in modern biomedical research, especially in genomic data analysis. As discussed by Schatz, Langmead, and Salzberg, cloud platforms can help researchers manage the growing scale of DNA sequencing data by providing flexible, scalable, and collaborative computing resources.
+
+With proper security and data governance, cloud computing can support future advances in precision medicine and biomedical discovery.
+
+## Reference
+
+Schatz, M. C., Langmead, B., & Salzberg, S. L. (2010). Cloud computing and the DNA data race. <em>Nature Biotechnology, 28</em>(7), 691–693. https://doi.org/10.1038/nbt0710-691
 
 <a href="/" class="button">← Back to Home</a>
 
