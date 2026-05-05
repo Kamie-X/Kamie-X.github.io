@@ -1,11 +1,15 @@
 ---
 layout: default
-title: About Me
+title: ""
 ---
 
 <style>
   .site-title {
     display: none !important;
+  }
+
+  h1 {
+    display: none !important; /* removes the top "About Me" title */
   }
 
   body {
@@ -21,28 +25,20 @@ title: About Me
     border-radius: 30px;
     box-shadow: 0 18px 45px rgba(11,94,215,0.18);
     animation: fadeUp 1s ease;
+    text-align: left;
   }
 
-  .about-box h1 {
-    text-align: center;
-    font-size: 46px;
-    color: #0b5ed7;
-    margin-bottom: 20px;
-  }
-
-  .about-box h2 {
-    text-align: center;
-    color: #1769aa;
-    margin-top: 35px;
-    font-size: 28px;
-  }
-
-  .about-box p {
+  .about-text {
     font-size: 18px;
     color: #4f5f70;
     line-height: 1.8;
-    text-align: left;
-    margin-top: 15px;
+  }
+
+  .about-section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #0b5ed7;
+    margin-top: 30px;
   }
 
   .about-list {
@@ -74,7 +70,6 @@ title: About Me
   .button:hover {
     background: linear-gradient(135deg, #198754, #20c997);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.25);
   }
 
   .center {
@@ -89,33 +84,37 @@ title: About Me
 
 <div class="about-box">
 
-# About Me
+<p class="about-text">
+Hello, my name is Kamela.
+</p>
 
-Hello, my name is **Kamela**.
+<p class="about-text">
+I am interested in health data science, cloud computing, and biomedical innovation.
+</p>
 
-I am interested in **health data science, cloud computing, and biomedical innovation**.
-
+<p class="about-text">
 This website presents my learning journey in understanding how modern cloud technologies support biomedical research, healthcare systems, and large-scale data analysis.
+</p>
 
 ---
 
-## My Interests
+<div class="about-section-title">My Interests</div>
 
 <ul class="about-list">
-  <li>Health Data Science</li>
-  <li>Cloud Computing in Biomedicine</li>
+  <li>Health data science</li>
+  <li>Cloud computing in biomedicine</li>
   <li>Bioinformatics</li>
-  <li>Genomic Data Analysis</li>
-  <li>Artificial Intelligence in Healthcare</li>
+  <li>Genomic data analysis</li>
+  <li>Artificial intelligence in healthcare</li>
 </ul>
 
 ---
 
-## Goal
+<div class="about-section-title">Goal</div>
 
-My goal is to explore how cloud platforms can enable scalable, efficient, and collaborative biomedical research. I am particularly interested in how cloud computing can support genomic data processing and improve healthcare outcomes.
-
----
+<p class="about-text">
+My goal is to explore how cloud platforms can enable scalable, efficient, and collaborative biomedical research, especially in genomic data analysis.
+</p>
 
 <div class="center">
   <a href="/" class="button">← Back to Home</a>
