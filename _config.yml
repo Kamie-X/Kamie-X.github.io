@@ -1,16 +1,14 @@
 title: "BioPulse Analytics"
 name: "Kamela"
-description: "A personal website exploring health data science, cloud computing, and biomedical innovation."
+description: "Health data science, cloud computing, and biomedical innovation."
 
 url: "https://kamie-x.github.io"
 baseurl: ""
 
+remote_theme: jeromelachaud/freelancer-theme
+
+plugins:
+  - jekyll-remote-theme
+
+# my avatar (I'll use it in content)
 avatar: "/images/avatar.png"
-
-footer-links:
-  github: "Kamie-X"
-  email: ""
-  linkedin: ""
-
-markdown: kramdown
-theme: minima
