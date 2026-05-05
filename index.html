@@ -2,44 +2,140 @@
 layout: default
 ---
 
-<div style="max-width: 800px; margin: 60px auto; text-align: center; font-family: Arial, sans-serif;">
+<style>
+  body {
+    background: linear-gradient(135deg, #f7f2ff, #eef9f6);
+  }
 
-  <!-- Avatar -->
-  <img 
-    src="/images/avatar.png" 
-    alt="Kamela avatar"
-    style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 20px;"
-  >
+  .hero {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 45px 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
 
-  <!-- Title -->
-  <h1 style="font-size: 38px; margin-bottom: 10px;">
-    Kamela's Website
-  </h1>
+  .avatar {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(92, 70, 156, 0.25);
+    animation: float 3s ease-in-out infinite;
+  }
 
-  <!-- Subtitle -->
-  <p style="font-size: 18px; color: #666; margin-bottom: 40px;">
-    Health data science, cloud computing, and biomedical innovation
+  .title {
+    font-size: 44px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2f254f;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: #5f6470;
+    max-width: 680px;
+    margin: 0 auto 35px;
+    line-height: 1.6;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #e9ddff;
+    color: #4b2e83;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 6px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #2f254f;
+  }
+
+  .post-card {
+    text-align: left;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    margin: 25px auto;
+    max-width: 700px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(92, 70, 156, 0.18);
+  }
+
+  .post-date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .post-card a {
+    color: #4b2e83;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .post-card a:hover {
+    color: #0f766e;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+</style>
+
+<div class="hero">
+
+  <img src="/images/avatar.png" alt="Kamela avatar" class="avatar">
+
+  <h1 class="title">BioPulse Analytics</h1>
+
+  <p class="subtitle">
+    A personal website by Kamela exploring health data science, cloud computing,
+    and biomedical innovation.
   </p>
 
-  <hr style="margin: 40px 0;">
-
-  <!-- Posts -->
-  <h2 style="margin-bottom: 25px;">Latest Posts</h2>
-
-  <div style="text-align: left;">
-    {% for post in site.posts %}
-      <div style="margin-bottom: 25px; padding: 15px; border: 1px solid #ddd; border-radius: 10px;">
-        <p style="margin: 0; color: #777;">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </p>
-
-        <h3 style="margin: 5px 0;">
-          <a href="{{ post.url | relative_url }}" style="text-decoration: none;">
-            {{ post.title }}
-          </a>
-        </h3>
-      </div>
-    {% endfor %}
+  <div>
+    <span class="tag">Health Data Science</span>
+    <span class="tag">Cloud Computing</span>
+    <span class="tag">Genomics</span>
+    <span class="tag">Biomedical Innovation</span>
   </div>
+
+  <h2 class="section-title">Latest Posts</h2>
+
+  {% for post in site.posts %}
+    <div class="post-card">
+      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </div>
+  {% endfor %}
 
 </div>
