@@ -78,5 +78,19 @@ Despite challenges related to security and data management, cloud computing is e
 ## References
 
 Schatz, M. C., Langmead, B., & Salzberg, S. L. (2010).  
+
+<div style="text-align:center; margin-top:40px;">
+  <a href="/" style="
+    display:inline-block;
+    padding:12px 22px;
+    background:#0b5ed7;
+    color:white;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:bold;
+  ">
+    ← Back to Home
+  </a>
+</div>
 Cloud computing and the DNA data race. *Nature Biotechnology, 28*(7), 691–693.  
 https://doi.org/10.1038/nbt0710-691
