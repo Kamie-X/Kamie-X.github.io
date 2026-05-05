@@ -5,17 +5,18 @@ title: About Me
 
 Hello, my name is **Kamela**.
 
-I am interested in **health data science, cloud computing, and biomedical innovation**. This website showcases my work and learning journey in applying cloud technologies to biomedical research and healthcare.
+I am interested in **health data science, cloud computing, and biomedical innovation**. This website presents my learning journey as I explore how cloud technologies can support biomedical research, healthcare applications, and large-scale data analysis.
 
 My main interests include:
 
-- Health Data Science  
-- Cloud Computing in Biomedicine  
-- Bioinformatics  
-- Genomic Data Analysis  
-- Artificial Intelligence in Healthcare  
+- Health data science
+- Cloud computing in biomedicine
+- Bioinformatics
+- Genomic data analysis
+- Artificial intelligence in healthcare
 
-This website demonstrates how cloud platforms can support scalable, efficient, and collaborative biomedical data analysis.
+Through this website, I aim to better understand how cloud-based platforms can help researchers store, process, and analyze complex biomedical datasets more efficiently.
 
-### Connect
-- GitHub: https://github.com/Kamie-X
+You can find my GitHub profile here:
+
+[GitHub - Kamie-X](https://github.com/Kamie-X)
