@@ -1,25 +1,23 @@
 title: "BioPulse Analytics"
 name: "Kamela"
-description: "Exploring health data science, cloud computing, and biomedical innovation."
+description: "A personal website exploring health data science, cloud computing, and biomedical innovation."
 
-url: "https://kamela-x.github.io"
+url: "https://kamie-x.github.io"
+baseurl: ""
 
-# No avatar (as requested)
-avatar: ""
+avatar: "/images/avatar.png"
+
+author:
+  name: "Kamela"
 
 footer-links:
-  github: "kamela-x"
-  linkedin: ""
+  github: "Kamie-X"
   email: ""
+  linkedin: ""
 
-# Build settings
 markdown: kramdown
 theme: minima
 
-# Optional extras
-author: "Kamela"
-lang: "en"
-
-# Social (optional, can expand later)
-social:
-  github: kamela-x
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
