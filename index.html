@@ -1,5 +1,22 @@
 ---
-layout: home
-title: Ferran Aran's Website
-subtitle: This is where I will tell the world about me
+layout: default
 ---
+
+<div class="home">
+  <h1>Kamela's Website</h1>
+
+  <h2>Posts</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
