@@ -2,21 +2,35 @@
 layout: default
 ---
 
-<div class="home">
-  <h1>Kamela's Website</h1>
+<div style="max-width: 850px; margin: 50px auto; padding: 20px; font-family: Arial, sans-serif; text-align: center;">
 
-  <h2>Posts</h2>
+  <img 
+    src="{{ site.avatar | relative_url }}" 
+    alt="Kamela avatar" 
+    style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 20px;"
+  >
 
-  <ul class="post-list">
+  <h1 style="font-size: 42px; margin-bottom: 10px;">BioPulse Analytics</h1>
+
+  <p style="font-size: 20px; color: #666; max-width: 650px; margin: 0 auto 35px;">
+    Health data science, cloud computing, and biomedical innovation.
+  </p>
+
+  <hr style="margin: 35px 0;">
+
+  <h2 style="font-size: 30px; margin-bottom: 25px;">Latest Posts</h2>
+
+  <div style="text-align: left; max-width: 650px; margin: 0 auto;">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+      <div style="margin-bottom: 25px; padding: 20px; border: 1px solid #ddd; border-radius: 12px; background: #fafafa;">
+        <p style="color: #777; margin: 0 0 8px;">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3 style="margin: 0;">
+          <a href="{{ post.url | relative_url }}" style="color: #1a5fb4; text-decoration: none;">
             {{ post.title }}
           </a>
         </h3>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
+
 </div>
