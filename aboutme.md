@@ -1,17 +1,19 @@
 ---
 layout: page
-title: About me
-subtitle: A brief personal description
+title: About Me
 ---
 
-My name is Ferran Aran, I am from Lleida and I love learning new skills. Have a look at my background below!
+Hi! I'm **Kamela**, a student passionate about **health data science, cloud computing, and biomedical innovation**.
 
-### Education
+I’m particularly interested in how cloud technologies can be used to process and analyze large-scale biomedical data, such as genomic datasets and electronic health records. Through this work, I aim to contribute to more efficient healthcare systems and data-driven medical research.
 
-- Computer science degree at UdL (2019 - 2022)
-- Master in computer science at UdL (2022 - 2024)
-- PhD in RL applied to energy (2024 - present)
+This website is part of my learning journey, where I explore cloud-based tools and applications in biomedicine.
 
-### Experience
-- Research assistant on MILP at UdL (2022 - 2023)
-- R&D as Data Scientist at GFT Technologies (2023 - present)
+### Interests
+- Health Data Science
+- Cloud Computing
+- Bioinformatics
+- AI in Healthcare
+
+### Connect
+- GitHub: https://github.com/kamela-x
